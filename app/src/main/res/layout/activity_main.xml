@@ -17,29 +17,30 @@
 
         <Button
             android:id="@+id/btAbout"
+            style="@style/ButtonMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="О программе"
-            android:style="@style/ButtonMain"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/btChangeTimeFormat"
+            android:id="@+id/btChangeFontSize"
+            style="@style/ButtonMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:style="@style/ButtonMain"
             android:text="Изменить размер шрифта"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btAbout" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="45dp"
-            android:layout_height="94dp"
-            app:layout_constraintBottom_toBottomOf="@+id/btChangeTimeFormat"
-            app:layout_constraintStart_toEndOf="@+id/btChangeTimeFormat"
-            app:layout_constraintTop_toTopOf="@+id/btChangeTimeFormat" />
+        <NumberPicker
+            android:id="@+id/npFontSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/btChangeFontSize"
+            app:layout_constraintStart_toEndOf="@+id/btChangeFontSize"
+            app:layout_constraintTop_toTopOf="@+id/btChangeFontSize"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
